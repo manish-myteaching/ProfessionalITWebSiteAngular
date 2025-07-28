@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://manish-myteaching.github.io/ProfessionalITWebSiteAngular',
+  basePath: '/ProfessionalITWebSiteAngular',
   supportedLocales: {
   "en-US": ""
 },

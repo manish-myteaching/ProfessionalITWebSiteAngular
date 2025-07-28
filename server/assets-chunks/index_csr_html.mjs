@@ -9,6 +9,6 @@ export default `<!doctype html>
 <link rel="stylesheet" href="styles-5INURTSO.css"></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="main-3RESMAXR.js" type="module"></script></body>
+<script src="main-2XMEO3T5.js" type="module"></script></body>
 </html>
 `;

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "professionait-website-workspace": {
+    "ProfessionalITWebSiteAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -11,27 +11,27 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular/build:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "browser": "src/main.ts",
+            "outputPath": "dist/ProfessionalITWebSiteAngular",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
+              "baseHref": "/ProfessionalITWebSiteAngular/",
               "budgets": [
                 {
                   "type": "initial",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "professionait-website-workspace:build:production"
+              "buildTarget": "ProfessionalITWebSiteAngular:build:production"
             },
             "development": {
-              "buildTarget": "professionait-website-workspace:build:development"
+              "buildTarget": "ProfessionalITWebSiteAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
